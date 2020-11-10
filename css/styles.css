@@ -10036,7 +10036,7 @@ a.text-black:hover, a.text-black:focus {
   }
 
   pre {
-    white-space: pre-wrap !important;
+    white-space: pre-wrap;
   }
 
   pre,
@@ -10136,7 +10136,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#fff, 50%);
   outline: none;
   background-color: transparent;
 }
@@ -10192,9 +10192,8 @@ body {
 }
 
 .btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
   padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -10290,7 +10289,7 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -10300,8 +10299,20 @@ body {
   padding: 10rem 0;
 }
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 5rem;
 }
+
+.hover {
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0.1s;
+}
+
+.hover:hover {
+  transform: scale(0.95);
+}
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
@@ -10346,17 +10357,22 @@ body {
   padding-top: 5rem;
 }
 .contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
 }
 .contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.2rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #024b46;
   border-width: 0.25rem;
   width: 3rem;
 }
