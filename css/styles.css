@@ -160,7 +160,7 @@ a:hover {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("/assets/img/bergen.jpg");
+  background: url("../assets/img/bergen.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -193,7 +193,7 @@ a:hover {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/assets/img/fog-1.png") repeat-x;
+  background: url("../assets/img/fog-1.png") repeat-x;
   background-size: 100% auto;
   background-position: 0 bottom;
   animation: fogAnim 60s;
@@ -208,7 +208,7 @@ a:hover {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/assets/img/fog-2.png") repeat-x;
+  background: url("../assets/img/fog-2.png") repeat-x;
   background-size: 200% auto;
   background-position: 0 top;
   animation: fogAnim 30s;
