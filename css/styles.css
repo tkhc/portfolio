@@ -2,6 +2,10 @@ body {
   letter-spacing: 0.0625em; 
 }
 
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
 a:link {
   color:#f6e0c9;
   background-color: transparent;
